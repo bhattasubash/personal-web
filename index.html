@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sadesh Shaffa — Personal Site</title>
+  <meta name="description" content="Personal website inspired by Ali Abdaal — productivity, learning and creativity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Home">
+        <img id="siteLogo" src="./assets/logo.png" alt="Sadesh Shaffa logo" />
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="siteNav" class="site-nav">
+        <a href="#blog">Blog</a>
+        <a href="#courses">Courses</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hey, I'm Sadesh</p>
+          <h1>Helping you learn, work and live more effectively</h1>
+          <p class="lead">I share ideas on productivity, learning, and building a meaningful career. Explore the latest articles, videos and courses below.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#blog">Read the blog</a>
+            <a class="btn btn-ghost" href="#newsletter">Join the newsletter</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img id="heroImage" src="./assets/hero.png" alt="Sadesh Shaffa"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Cards -->
+    <section class="section features" id="highlights">
+      <div class="container">
+        <div class="section-head">
+          <h2>Start here</h2>
+          <p class="muted">A few popular places to begin.</p>
+        </div>
+        <div class="card-grid">
+          <a class="card" href="#blog" aria-label="Go to blog">
+            <div class="card-media icon-circle">✍️</div>
+            <div class="card-body">
+              <h3>Blog</h3>
+              <p>Long-form notes on learning, productivity and tech.</p>
+              <span class="link">Browse articles →</span>
+            </div>
+          </a>
+          <a class="card" href="#youtube" aria-label="Go to YouTube">
+            <div class="card-media icon-circle">🎬</div>
+            <div class="card-body">
+              <h3>YouTube</h3>
+              <p>Videos about studying, creators and career growth.</p>
+              <span class="link">Watch videos →</span>
+            </div>
+          </a>
+          <a class="card" href="#courses" aria-label="Go to courses">
+            <div class="card-media icon-circle">🎓</div>
+            <div class="card-body">
+              <h3>Courses</h3>
+              <p>Learn skills with structured, practical lessons.</p>
+              <span class="link">See courses →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section-head">
+          <h2>Latest articles</h2>
+          <a class="link" href="#">View all →</a>
+        </div>
+        <div class="post-grid">
+          <article class="post-card">
+            <img src="./assets/post-placeholder.svg" alt="Post cover" />
+            <div class="post-body">
+              <h3>How to study effectively (without burning out)</h3>
+              <p class="muted">Actionable strategies for focused, sustainable learning.</p>
+              <span class="link">Read more →</span>
+            </div>
+          </article>
+          <article class="post-card">
+            <img src="./assets/post-placeholder.svg" alt="Post cover" />
+            <div class="post-body">
+              <h3>My favourite productivity system in 2025</h3>
+              <p class="muted">Tools and habits I actually use every day.</p>
+              <span class="link">Read more →</span>
+            </div>
+          </article>
+          <article class="post-card">
+            <img src="./assets/post-placeholder.svg" alt="Post cover" />
+            <div class="post-body">
+              <h3>Creative consistency for busy people</h3>
+              <p class="muted">Simple steps to publish regularly without stress.</p>
+              <span class="link">Read more →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter" id="newsletter">
+      <div class="container newsletter-card">
+        <div class="newsletter-copy">
+          <h2>Join 1,000+ readers</h2>
+          <p class="muted">Get my best ideas on productivity and learning in your inbox.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter-form" novalidate>
+          <input id="emailInput" type="email" placeholder="Enter your email" required aria-label="Email" />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+          <p id="newsletterMsg" class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Courses / YouTube placeholders -->
+    <section class="section split" id="courses">
+      <div class="container split-grid">
+        <div class="split-item">
+          <h2>Courses</h2>
+          <p class="muted">Deep-dives to level up your skills.</p>
+          <a class="btn btn-ghost" href="#">Explore courses</a>
+        </div>
+        <div class="split-item" id="youtube">
+          <h2>YouTube</h2>
+          <p class="muted">Weekly videos on learning and productivity.</p>
+          <a class="btn btn-ghost" href="#">Watch on YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <h2>About me</h2>
+          <p class="muted">I'm a creator and educator sharing practical ideas to help you learn faster, work smarter and enjoy the process. This site is a minimal clone of Ali Abdaal's layout, implemented in plain HTML, CSS and JS.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="brand footer-brand" href="#home" aria-label="Home">
+        <img src="./assets/logo.png" alt="Sadesh Shaffa logo" onerror="this.src='./assets/logo-placeholder.svg'" />
+      </a>
+      <nav class="footer-nav">
+        <a href="#blog">Blog</a>
+        <a href="#courses">Courses</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#about">About</a>
+      </nav>
+      <p class="muted copyright">© <span id="year"></span> Sadesh Shaffa</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
